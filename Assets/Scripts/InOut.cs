@@ -10,7 +10,8 @@ public class InOut : MonoBehaviour
     [SerializeField] private Text CurrentWallet;
     [SerializeField] private InputField inputTxT_Money;
     private int Current_Money;
-    private int Current_Wallet=100000;
+    private int Current_Wallet;
+    public GameObject PopUp;
     // Start is called before the first frame update
 
     public void Start()
@@ -19,25 +20,26 @@ public class InOut : MonoBehaviour
         {
             Current_Money = int.Parse(CurrentBalance.text);
         }
-        else
+        if (CurrentWallet != null && inputTxT_Money != null)
         {
-            Debug.LogError("CurrentBalance 또는 inputTxT_Money가 할당되지 않았습니다.");
+            Current_Wallet = int.Parse(CurrentWallet.text);
         }
     }
     public void Input() //입금
     {
-        Current_Money += int.Parse(inputTxT_Money.text); //입력받은 문자형 숫자를 int형 숫자로 바꿔줌.
-        CurrentBalance.text = Current_Money.ToString(); //int타입을 string 타입으로 바꾸어 화면에 반영.
-        if (Current_Wallet>0)
+        if(Current_Wallet>=int.Parse(inputTxT_Money.text))
         {
+            Current_Money += int.Parse(inputTxT_Money.text); //입력받은 문자형 숫자를 int형 숫자로 바꿔줌.
+            CurrentBalance.text = Current_Money.ToString(); //int타입을 string 타입으로 바꾸어 화면에 반영.
+            Debug.Log("check>=0");
             Current_Wallet -= int.Parse(inputTxT_Money.text);
             CurrentWallet.text = Current_Wallet.ToString();
+            //PopUp.SetActive(true);
         }
-        else
+        else if(Current_Wallet < int.Parse(inputTxT_Money.text))
         {
-
+            Debug.Log("check<0");
         }
-
     }
 
     public void Output() //출금
