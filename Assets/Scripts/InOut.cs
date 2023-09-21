@@ -29,16 +29,17 @@ public class InOut : MonoBehaviour
     {
         if(Current_Wallet>=int.Parse(inputTxT_Money.text))
         {
+            Debug.Log("check>=0");
             Current_Money += int.Parse(inputTxT_Money.text); //입력받은 문자형 숫자를 int형 숫자로 바꿔줌.
             CurrentBalance.text = Current_Money.ToString(); //int타입을 string 타입으로 바꾸어 화면에 반영.
-            Debug.Log("check>=0");
             Current_Wallet -= int.Parse(inputTxT_Money.text);
             CurrentWallet.text = Current_Wallet.ToString();
-            //PopUp.SetActive(true);
+
         }
         else if(Current_Wallet < int.Parse(inputTxT_Money.text))
         {
             Debug.Log("check<0");
+            PopUp.SetActive(true);
         }
     }
 
@@ -49,5 +50,9 @@ public class InOut : MonoBehaviour
 
         CurrentBalance.text = Current_Money.ToString(); //int타입을 string 타입으로 바꿔줌
 
+    }
+    public void PopUpOff()
+    {
+        PopUp.SetActive(false);
     }
 }
