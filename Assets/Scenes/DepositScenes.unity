@@ -442,7 +442,7 @@ GameObject:
   - component: {fileID: 242026992}
   - component: {fileID: 242026991}
   m_Layer: 5
-  m_Name: 30,000
+  m_Name: 50,000
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

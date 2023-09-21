@@ -43,10 +43,19 @@ public class InOut : MonoBehaviour
 
     public void Output() //출금
     {
-
-        Current_Money -= int.Parse(inputTxT_Money.text); //문자형 숫자를 int형 숫자로 바꿔줌.
-
-        CurrentBalance.text = Current_Money.ToString(); //int타입을 string 타입으로 바꿔줌
+        if (Current_Money >= int.Parse(inputTxT_Money.text))
+        {
+            Debug.Log("check>=0");
+            Current_Money -= int.Parse(inputTxT_Money.text); //문자형 숫자를 int형 숫자로 바꿔줌.
+            CurrentBalance.text = Current_Money.ToString(); //int타입을 string 타입으로 바꾸어 화면에 반영.
+            Current_Wallet += int.Parse(inputTxT_Money.text);
+            CurrentWallet.text = Current_Wallet.ToString();
+        }
+        else if (Current_Money < int.Parse(inputTxT_Money.text))
+        {
+            Debug.Log("check<0");
+            PopUp.SetActive(true);
+        }
 
     }
     public void PopUpOff()
