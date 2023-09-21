@@ -2,9 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InPut : MonoBehaviour
+public class GameManager : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public static GameManager I;
+
+    void Awake()
+    {
+        I = this;
+    }
+
     void Start()
     {
         
@@ -13,6 +19,6 @@ public class InPut : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // answer
+        
     }
 }
