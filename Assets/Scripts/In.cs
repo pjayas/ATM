@@ -5,15 +5,13 @@ using UnityEngine.UI; //인풋 필드 쓰려면 필요함.
 
 public class InOut : MonoBehaviour
 {
-
     [SerializeField] private Text CurrentBalance;
     [SerializeField] private Text CurrentWallet;
     [SerializeField] private InputField inputTxT_Money;
-    private int Current_Money;
-    private int Current_Wallet;
+    public int Current_Money;
+    public int Current_Wallet;
     public GameObject PopUp;
     // Start is called before the first frame update
-
     public void Start()
     {
         if (CurrentBalance != null && inputTxT_Money != null)
@@ -25,6 +23,7 @@ public class InOut : MonoBehaviour
             Current_Wallet = int.Parse(CurrentWallet.text);
         }
     }
+
     public void Input() //입금
     {
         if(Current_Wallet>=int.Parse(inputTxT_Money.text))
@@ -34,7 +33,6 @@ public class InOut : MonoBehaviour
             CurrentBalance.text = Current_Money.ToString(); //int타입을 string 타입으로 바꾸어 화면에 반영.
             Current_Wallet -= int.Parse(inputTxT_Money.text);
             CurrentWallet.text = Current_Wallet.ToString();
-
         }
         else if(Current_Wallet < int.Parse(inputTxT_Money.text))
         {
