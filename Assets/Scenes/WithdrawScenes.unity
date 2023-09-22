@@ -912,9 +912,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Deposit, Assembly-CSharp
-        m_MethodName: Deposit_1
+      - m_Target: {fileID: 1013834469}
+        m_TargetAssemblyTypeName: Widraw, Assembly-CSharp
+        m_MethodName: Withdraw_1
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1047,7 +1047,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1013834469}
-        m_TargetAssemblyTypeName: InOut, Assembly-CSharp
+        m_TargetAssemblyTypeName: Widraw, Assembly-CSharp
         m_MethodName: PopUpOff
         m_Mode: 1
         m_Arguments:
@@ -1180,9 +1180,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Deposit, Assembly-CSharp
-        m_MethodName: Deposit_5
+      - m_Target: {fileID: 1013834469}
+        m_TargetAssemblyTypeName: Widraw, Assembly-CSharp
+        m_MethodName: Withdraw_5
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1425,7 +1425,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1013834464}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd189c9bca5f647288bda53f63b0ac55, type: 3}
+  m_Script: {fileID: 11500000, guid: 1cac4a48cfce641e7827443c26d02ee9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentBalance: {fileID: 682968106}
@@ -1791,7 +1791,6 @@ GameObject:
   - component: {fileID: 1179602443}
   - component: {fileID: 1179602442}
   - component: {fileID: 1179602441}
-  - component: {fileID: 1179602440}
   m_Layer: 5
   m_Name: "\uCD9C\uAE08"
   m_TagString: Untagged
@@ -1820,24 +1819,6 @@ RectTransform:
   m_AnchoredPosition: {x: 833.66, y: -346}
   m_SizeDelta: {x: 110.6818, y: 78.546}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1179602440
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1179602438}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd189c9bca5f647288bda53f63b0ac55, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CurrentBalance: {fileID: 0}
-  CurrentWallet: {fileID: 0}
-  inputTxT_Money: {fileID: 0}
-  Current_Money: 0
-  Current_Wallet: 0
-  PopUp: {fileID: 0}
 --- !u!114 &1179602441
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1883,7 +1864,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1013834469}
-        m_TargetAssemblyTypeName: InOut, Assembly-CSharp
+        m_TargetAssemblyTypeName: Widraw, Assembly-CSharp
         m_MethodName: Output
         m_Mode: 1
         m_Arguments:
@@ -2175,7 +2156,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uC785\uAE08"
+  m_Text: "\uCD9C\uAE08"
 --- !u!222 &1468291907
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2879,9 +2860,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Deposit, Assembly-CSharp
-        m_MethodName: Deposit_3
+      - m_Target: {fileID: 1013834469}
+        m_TargetAssemblyTypeName: Widraw, Assembly-CSharp
+        m_MethodName: Withdraw_3
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

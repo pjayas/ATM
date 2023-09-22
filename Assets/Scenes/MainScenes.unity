@@ -291,7 +291,6 @@ GameObject:
   - component: {fileID: 758646044}
   - component: {fileID: 758646043}
   - component: {fileID: 758646042}
-  - component: {fileID: 758646045}
   m_Layer: 5
   m_Name: InPut
   m_TagString: Untagged
@@ -364,7 +363,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 758646045}
+      - m_Target: {fileID: 1013834469}
         m_TargetAssemblyTypeName: Main, Assembly-CSharp
         m_MethodName: SceneChangeToInput
         m_Mode: 1
@@ -414,18 +413,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 758646040}
   m_CullTransparentMesh: 1
---- !u!114 &758646045
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 758646040}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bfec5fafa6fd14748b20016ee8d46f27, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &767332898
 GameObject:
   m_ObjectHideFlags: 0
@@ -719,6 +706,7 @@ GameObject:
   - component: {fileID: 1013834468}
   - component: {fileID: 1013834467}
   - component: {fileID: 1013834466}
+  - component: {fileID: 1013834469}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -815,6 +803,18 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &1013834469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1013834464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfec5fafa6fd14748b20016ee8d46f27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1076179910
 GameObject:
   m_ObjectHideFlags: 0
@@ -1080,7 +1080,6 @@ GameObject:
   - component: {fileID: 1362663910}
   - component: {fileID: 1362663909}
   - component: {fileID: 1362663908}
-  - component: {fileID: 1362663911}
   m_Layer: 5
   m_Name: OutPut
   m_TagString: Untagged
@@ -1153,7 +1152,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1362663911}
+      - m_Target: {fileID: 1013834469}
         m_TargetAssemblyTypeName: Main, Assembly-CSharp
         m_MethodName: SceneChangeToOutput
         m_Mode: 1
@@ -1203,18 +1202,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1362663906}
   m_CullTransparentMesh: 1
---- !u!114 &1362663911
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1362663906}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bfec5fafa6fd14748b20016ee8d46f27, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1404159272
 GameObject:
   m_ObjectHideFlags: 0

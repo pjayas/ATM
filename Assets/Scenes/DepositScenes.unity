@@ -341,7 +341,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 100
+  m_Text: 100000
 --- !u!222 &54608547
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -594,8 +594,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1013834470}
-        m_TargetAssemblyTypeName: Deposit, Assembly-CSharp
+      - m_Target: {fileID: 1013834469}
+        m_TargetAssemblyTypeName: InOut, Assembly-CSharp
         m_MethodName: Deposit_3
         m_Mode: 1
         m_Arguments:
@@ -1073,8 +1073,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1013834470}
-        m_TargetAssemblyTypeName: Deposit, Assembly-CSharp
+      - m_Target: {fileID: 1013834469}
+        m_TargetAssemblyTypeName: InOut, Assembly-CSharp
         m_MethodName: Deposit_1
         m_Mode: 1
         m_Arguments:
@@ -1289,8 +1289,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1013834470}
-        m_TargetAssemblyTypeName: Deposit, Assembly-CSharp
+      - m_Target: {fileID: 1013834469}
+        m_TargetAssemblyTypeName: InOut, Assembly-CSharp
         m_MethodName: Deposit_5
         m_Mode: 1
         m_Arguments:
@@ -1674,7 +1674,6 @@ GameObject:
   - component: {fileID: 1013834467}
   - component: {fileID: 1013834466}
   - component: {fileID: 1013834469}
-  - component: {fileID: 1013834470}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1783,24 +1782,6 @@ MonoBehaviour:
   CurrentBalance: {fileID: 1079363416}
   CurrentWallet: {fileID: 54608546}
   inputTxT_Money: {fileID: 54524685}
-  Current_Money: 0
-  Current_Wallet: 0
-  PopUp: {fileID: 756350072}
---- !u!114 &1013834470
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1013834464}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 87eaa5abde5bb43b896744e062144cb2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CurrentBalance: {fileID: 0}
-  CurrentWallet: {fileID: 0}
-  inputTxT_Money: {fileID: 0}
   Current_Money: 0
   Current_Wallet: 0
   PopUp: {fileID: 756350072}

@@ -18,11 +18,11 @@ public class Main : MonoBehaviour
     }
     public void SceneChangeToInput()
     {
-        SceneManager.LoadScene("InputScenes");
+        SceneManager.LoadScene("DepositScenes");
     }
     public void SceneChangeToOutput()
     {
-        SceneManager.LoadScene("OutputScenes");
+        SceneManager.LoadScene("WithdrawScenes");
     }
     public void SceneChangeToMain()
     {
